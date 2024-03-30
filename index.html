@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <style>
+        input{
+            display: block;
+            margin: 10px;
+        }
+        div{
+            margin: 10px;
+        }
+        button{
+            margin: 10px;
+        }
+        .warn{
+            color: red;
+        }
+        span{
+            margin-left: 10px;
+            display: block;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+    <form>
+        <div>Email</div>
+        <input onchange="checkEmail()" id="email" type="text" placeholder="Example@gmail.com" size="35">
+        <div class="warn"></div>
+        <div>Password</div>
+        <input onchange="checkPassword()" id="password" type="text" placeholder="Your password" size="35">
+        <div class="warn"></div>
+        <span></span>
+        <button id="submit-btn" type="submit">Submit</button>
+    </form>
+</fieldset>
+<script src="script.js"></script>
+</body>
+</html>
